@@ -21,7 +21,7 @@ export class MyApp {
       { title: 'Home', component: "HomePage"}
   ];
 
-  }
+  } 
 
   initializeApp() {
     this.platform.ready().then(() => {
