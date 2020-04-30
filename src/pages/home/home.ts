@@ -33,7 +33,7 @@ export class HomePage {
     this.auth.authenticate(this.creds)
       .subscribe(response => {
         //somente para teste se o cabeçalho veio na resposta
-        console.log(response.headers.get('Authorization'));
+        this.auth.successfulLogin(response.headers.get('Authorization'));
         this.navCtrl.setRoot('CategoriasPage');
       },
       error => {});  
